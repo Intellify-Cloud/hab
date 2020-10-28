@@ -1,0 +1,24 @@
+url    : "https://olink.onrender.com"
+baseurl: ""
+
+title      : evo Up! – Bond Origination and Home Loan Experts
+email      : info@oobalink.co.za
+description: Let evo Up! get you the best deal on your homeloan and provide you with comparative quotes. Trust us to secure your bond finance. Many buyers choose us to manage their homeloans with the best rates..
+author     : Eben Roux / Pieter Oosthuizen
+
+analytics:
+  google: #Google Analytics tracking code here
+
+collections:
+  portfolio:
+
+markdown: kramdown
+
+webserver_headers:
+  - - Access-Control-Allow-Origin
+    - "*"
+  - - Access-Control-Allow-Methods
+    - GET, OPTIONS, HEAD
+
+logo:
+  path: /assets/img/evo up-logo.png

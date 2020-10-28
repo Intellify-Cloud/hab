@@ -1,0 +1,181 @@
+header:
+    title: Welcome to evo UP!
+    text: Your home finance experts.
+    branches:
+      - name: Northern Suburbs (WC)
+        link: "/boland-cape-winelands"
+      - name: Boland and Winelands (WC)
+        link: "/boland-cape-winelands"
+      - name: Pretoria (GP)
+        link: "/boland-cape-winelands"
+      - name: Southern Suburbs & Atlantic Seaboard (WC)
+        link: "/boland-cape-winelands"
+
+services:
+    title: "Services We Offer"
+    text: "We get you the most competitive rate by sourcing quotes from the banks for you to compare."
+    section: services
+    list:
+      - title: "Bond Origination"
+        desc: "We submit your application to up to seven banks to get you the best rate, at NO cost to you?"
+        icon: fas fa-home
+        link: 
+          url: mailto:admin@office.co.za?subject=Mail from our Website
+          text: "Email Us"
+      - title: "Pre-qualification"
+        desc: "One of our experts will help check your credit record, income and expenses to give you an accurate assessment of what you can afford. We let you know how likely you are to qualify for a bond."
+        icon: fas fa-tasks       
+        link:
+          url: tel:+27833259537
+          text: "Call Us"
+      - title: "I’m Still Looking for a Home"
+        desc: "I’m searching property portals and visiting show houses"
+        icon: fas fa-search
+
+textblock:
+    title: "Why evo Up!"
+    text: "Home loans are our business, and we focus on getting bonds approved."
+    footer: "Our service is completely FREE, with no obligation."
+    section: textblock
+    list:
+      - title: "We help you complete one application, which we submit to all the banks."
+      - title: "We apply to the banks including your own to get quotes."
+      - title: "You can then compare the various quotes."
+      - title: "We will negotiate the rate & terms on your behalf."
+      - title: "We can assist you in securing a zero deposit bond if required."
+
+portfolio:
+    title: "Other Services"
+    text: "Some of our work"
+    section: portfolio
+    closebutton: "Close"
+    
+
+timeline:
+    title: "Steps in the Buying Process" 
+    text: "This is a quick breakdown of the home buying process"
+    section: timeline
+    events:
+      - title: "Determine what you can afford"
+        year: "Step 1"
+        desc: "Whether you're looking to buy or ready to put in an offer, we recommend you [get prequalified](https://www.ooba.co.za/home-loan/prequalify/). Do it yourself with our online Bond Indicator tool or get expertly verified by an expert before submitting your offer."
+        image: assets/img/timeline/1.jpg
+        alt: 
+      - title: "Check your credit record"
+        year: "Step 2"
+        desc: "As far as your bank is concerned, your credit score is a big number above your head that tells them how much of a risk you are. Your credit score indicates to your bank whether your past debt repayment behaviour will make you a good risk or not, we recommend [Clearscore](https://www.clearscore.co.za)."
+        image: assets/img/timeline/2.jpg
+        alt: 
+      - title: "Find your ideal home"
+        year: "Step 3"
+        desc: "Find out where you want to live, whether it’s important to be close to a school, medical facility, supermarket and shops, and other useful amenities. The desired size of the home and whether a garden is a necessity. Whether you want to live in a gated community. Whether it’s important to be in a quiet neighbourhood."
+        image: assets/img/timeline/3.jpg
+        alt: image alt text
+      - title: "Sign a Offer to Purchase"
+        year: "Step 4"
+        desc: "Once you’ve found your dream home, knowing how much you can afford, you’re ready to sign an offer to purchase. This is an agreement between you and the seller that stipulates the terms and conditions for the sale of the property."
+        image: assets/img/timeline/4.jpg
+        alt: 
+        # you can enforce the aligment
+        align: right
+      - title: "Get the best bond"
+        year: "Step 5"
+        desc: "We apply with all the banks, including your own, to provide you with comparative homeloan rates. You then decide what bank you want to proceed with from the  bank quotes. **We Help Every Step of the Way!**"
+        image: assets/img/timeline/5.jpg
+        alt: image alt text
+    end: "Make Us <br> Part of <br> Your Story!"
+
+about:
+    title: "About Us"
+    text: "It was after I retired from the job market that I returned to my old love: woodworking. It was after I retired from the job market that I returned to my old love: woodworking.It was after I retired from the job market that I returned to my old love: woodworking.It was after I retired from the job market that I returned to my old love: woodworking.It was after I retired from the job market that I returned to my old love: woodworking.It was after I retired from the job market that I returned to my old love: woodworking.It was after I retired from the job market that I returned to my old love: woodworking.It was after I retired from the job market that I returned to my old love: woodworking.It was after I retired from the job market that I returned to my old love: woodworking."
+    text2: "The title nods to the nautical rally cry, “All hands on deck,” and the album stands as the most collaborative and cohesive project the crew has yet produced. New Noise Magazine called the record, “their most immediately catchy work yet…easily a career high.” After an interview at this year’s SXSW, Fast Company Magazine wrote, “their beats are fiercely contemporary, and the five rappers…are ferocious wordsmiths with forward-thinking rhymes.” It was made by old friends who’ve tuned their craft, both together and individually, for over a decade. And it shows. Both the catchiest and densest album in the group’s catalog, All Hands adeptly walks a tightrope of immediately memorable hooks and in-depth lyricism that rewards repeated listens. The result is equally worthy of up-to-11 trunk-rattling drives as it is late-night headphone sessions."
+
+
+clients:
+    title: Bank Partners
+    section: clients
+    max-height: 120px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "ABSA"
+        url: https://www.absa.co.za
+        logo: assets/img/clients/absa-bw.png
+      - title: "FNB"
+        url: https://www.fnb.co.za/
+        logo: assets/img/clients/fnb-bw.png
+      - title: "Investec"
+        url: https://www.investec.co.za/
+        logo: assets/img/clients/investec-bw.png
+      - title: "Ithala Bank"
+        url: https://www.ithala.co.za
+        logo: assets/img/clients/ithala-bank.png
+      - title: "Rand Merchant Bank"
+        url: https://www.rmb.co.za
+        logo: assets/img/clients/rmb-img.png
+      - title: "Nedbank"
+        url: https://www.nedbank.co.za
+        logo: assets/img/clients/nedbank-bw.png
+      - title: "Standard Bank"
+        url: https://www.absa.co.za
+        logo: assets/img/clients/SBSA-bw.png
+    
+team:
+    title: "OUR TEAM"
+    # text: "Lorem ipsum dolor sit amet consectetur."
+    # subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: team
+    contact: Call Us On 012 345 6789
+    people:
+      - name: "Diana Peterson"
+        role: "Office Admin"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: tel:123-456-7890
+            icon: fas fa-phone
+          - url: mailto:admin@company.co.za?subject=Website Enquiry
+            icon: fas fa-envelope
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+
+      - name: "David Young"
+        role: "Owner and Consultant"
+        image: assets/img/team/gavin-young.jpg
+        social:
+          - url: tel:123-456-7890
+            icon: fas fa-phone
+          - url: mailto:admin@company.co.za?subject=Website Enquiry
+            icon: fas fa-envelope
+          - url: https://www.linkedin.com/in/eben-roux-854923135/
+            icon: fab fa-linkedin-in
+      - name: "Laura Parker"
+        role: "Bond Consultant"
+        image: assets/img/team/2.jpg
+        social:
+          - url: tel:123-456-7890
+            icon: fas fa-phone
+          - url: mailto:admin@company.co.za?subject=Website Enquiry
+            icon: fas fa-envelope
+          - url: https://www.linkedin.com/in/eben-roux-854923135/
+            icon: fab fa-linkedin-in
+
+contact:
+    title: "Contact Us"
+    text: "Lorem ipsum or call 123456789"
+    section: team
+    
+footer:
+    legal: "Powered by the evo Group"
+    social:
+      - url: https://twitter.com
+        icon: "fab fa-twitter"  
+      - url: https://facebook.com
+        icon: "fab fa-facebook-f"
+      - url: https://linkedin.com
+        icon: "fab fa-linkedin-in"
+      # - url: https://github.com/raviriley/agency-jekyll-theme
+      #   icon: "fab fa-github"
+      - url: https://instagram.com
+        icon: "fab fa-instagram"
+
+
+# {{ site.data.sitetext.ex.ex | markdownify | default: example }}

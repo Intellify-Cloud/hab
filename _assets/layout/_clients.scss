@@ -1,0 +1,19 @@
+.brand-logo {
+  margin: 30px;
+}
+
+#clients .row {
+  margin-top: 50px;
+}
+
+#clients img {
+  filter: rgb(161, 159, 143); /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+/* Disable grayscale on hover */
+#clients img:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}

@@ -1,0 +1,59 @@
+<head>
+{% if site.analytics.google %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+		gtag('config', '{{ site.analytics.google }}');
+  </script>
+  <!-- End Google Analytics -->
+{% endif %}
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="title" content="{{ site.title }}">
+  <meta name="description" content="{{ site.description }}">
+  <!-- Primary Meta Tags -->
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="https://olink.onrender.com/evo_up_homeloan_experts.gif">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ site.url }}">
+  <meta property="twitter:title" content="{{ site.title }}">
+  <meta property="twitter:description" content="{{ site.description }}">
+  <meta property="twitter:image" content="/evo_up_homeloan_experts.gif">
+
+
+  <meta name="author" content="{{ site.author }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <link rel="icon" href="{{ site.url }}/favicon.png" type="image/png">
+  <link rel="stylesheet" href="{{ site.url | append: "/assets/bundle.css" | relative_url }}">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <script src="{{ site.url | append: "/assets/bundle.js" | relative_url }}"></script>
+  <script lang="js">var baseurl = "{{ "" | relative_url }}";</script>
+
+  <!-- Page container change top padding when nav shrinks -->
+  {% if page.layout == "page" %}
+  <style>
+    #pagecontainer {padding-top: 150px;}
+	@media only screen and (max-width: 991px) {
+	  #pagecontainer {padding-top: 100px;}
+	}
+  </style>
+  {% endif %}
+  
+</head>

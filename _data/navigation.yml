@@ -1,0 +1,18 @@
+nav:
+  - title: "Services"
+    section: services
+
+  - title: "Why evo Up!"
+    section: textblock
+
+  - title: "Team"
+    section: team
+
+  - title: "About"
+    section: about
+
+  - title: "Calculators"
+    url: /calculators
+
+  - title: "Contact"
+    url: /contact

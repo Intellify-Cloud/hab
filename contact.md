@@ -1,23 +1,23 @@
 ---
 layout: page
-title: evo Up!
+title: Homeloans and Bonds
 background: grey
 ---
 <div class="col-lg-12 text-center">
-	<h1 class="section-heading text-uppercase">evo Up!</h1>
+	<h1 class="section-heading text-uppercase">Homeloans and Bonds</h1>
 </div>
 
-Gavin Young is a franchisee in oobalink Western Cape, and the owner of oobalink Boland & Cape Winelands. "I graduated from Stellenbosch University in 1985 and since then have spent most of my working life in banking at a Regional and Head Office level. I left banking in mid 2006 and started my own mortgage origination business.
-My focus is delivering service to agents and bond applicants by applying all my skill and knowledge of banking to make the deal work. I have recruited a fabulous team who share the same values."
+We are a dynamic team dedicated to assist with obtaining finance for your homeloan. We are situated in the breaiful province of Kwa-Zule Natal and operate out the the Durban metropolitan area. We have over 30 years of combined experience at our disposal and have spent most of my working life in property, home finance and home buying advice. We  have old school values and believe in building relationships with human-to-human interactions. We started our mortgage origination business with the aim to give our clients  great servcie and a personal experience.
+
+We are focuseesd on delivering service and advice to estate agents, bond applicants and home buyers by applying our skill, knowledge and experience in makinf deals work and work for you.
 
 {% include team.html %}
 
 #### CONTACT US
 
-* oobalink Boland & Cape Winelands
-* 12 Swan Lane
-* Bergvliet
-* 7945
+* Durban North
+* Durabn 
+* 4051
 
 * Tel: <a href="tel:+27217127943">+27 21 712 7943</a>
 * Fax: +27 865 117 076

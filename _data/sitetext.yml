@@ -1,6 +1,6 @@
 header:
-    title: Welcome to evo UP!
-    text: Your home finance experts.
+    title: Welcome Homeloans ans Bonds
+    text: Home loan experts.
     branches:
       - name: Northern Suburbs (WC)
         link: "/boland-cape-winelands"
@@ -13,29 +13,29 @@ header:
 
 services:
     title: "Services We Offer"
-    text: "We get you the most competitive rate by sourcing quotes from the banks for you to compare."
+    text: "We get the most competitive rates from the banks, so that you can get the best deal."
     section: services
     list:
-      - title: "Bond Origination"
-        desc: "We submit your application to up to seven banks to get you the best rate, at NO cost to you?"
+      - title: "What is Bond Origination?"
+        desc: "We submit your application to the major banks to get you the interest rate, at NO cost to you?"
         icon: fas fa-home
         link: 
-          url: mailto:admin@office.co.za?subject=Mail from our Website
+          url: mailto:nola@homeloansandbonds.co.za?subject=Mail from our Website
           text: "Email Us"
       - title: "Pre-qualification"
-        desc: "One of our experts will help check your credit record, income and expenses to give you an accurate assessment of what you can afford. We let you know how likely you are to qualify for a bond."
+        desc: "We will help check your credit record, income and expenses and give you an accurate assessment of what you can afford. We let you know how likely you are to qualify for a bond."
         icon: fas fa-tasks       
         link:
-          url: tel:+27833259537
+          url: tel:+27315722042
           text: "Call Us"
-      - title: "I’m Still Looking for a Home"
-        desc: "I’m searching property portals and visiting show houses"
-        icon: fas fa-search
+      # - title: "I’m Still Looking for a Home"
+      #   desc: "I’m searching property portals and visiting show houses"
+      #   icon: fas fa-search
 
 textblock:
-    title: "Why evo Up!"
-    text: "Home loans are our business, and we focus on getting bonds approved."
-    footer: "Our service is completely FREE, with no obligation."
+    title: "Why Homeloans and Bonds?"
+    text: "Homeloans are our business, we focus on getting bonds approved at the best interest rate."
+    footer: "***  Our service is completely FREE, with no obligation.***"
     section: textblock
     list:
       - title: "We help you complete one application, which we submit to all the banks."
@@ -87,8 +87,8 @@ timeline:
 
 about:
     title: "About Us"
-    text: "It was after I retired from the job market that I returned to my old love: woodworking. It was after I retired from the job market that I returned to my old love: woodworking.It was after I retired from the job market that I returned to my old love: woodworking.It was after I retired from the job market that I returned to my old love: woodworking.It was after I retired from the job market that I returned to my old love: woodworking.It was after I retired from the job market that I returned to my old love: woodworking.It was after I retired from the job market that I returned to my old love: woodworking.It was after I retired from the job market that I returned to my old love: woodworking.It was after I retired from the job market that I returned to my old love: woodworking."
-    text2: "The title nods to the nautical rally cry, “All hands on deck,” and the album stands as the most collaborative and cohesive project the crew has yet produced. New Noise Magazine called the record, “their most immediately catchy work yet…easily a career high.” After an interview at this year’s SXSW, Fast Company Magazine wrote, “their beats are fiercely contemporary, and the five rappers…are ferocious wordsmiths with forward-thinking rhymes.” It was made by old friends who’ve tuned their craft, both together and individually, for over a decade. And it shows. Both the catchiest and densest album in the group’s catalog, All Hands adeptly walks a tightrope of immediately memorable hooks and in-depth lyricism that rewards repeated listens. The result is equally worthy of up-to-11 trunk-rattling drives as it is late-night headphone sessions."
+    text: ""
+    text2: "We are here to assist you by obtaining the best deal in terms of your homeloan. We are situated in the beautiful province of Kwa-Zulu Natal and operate out the the Durban metropolitan area. We have over 30 years of combined experience at our disposal and have spent most of our lives in property, home finance and home buying advice. We have old school values and believe in building relationships with human-to-human interactions. <br><br> We started our mortgage origination business with the aim to give our clients great service and a personal experience. We are focussed on delivering service and advice to estate agents, bond applicants and home buyers by applying our skill, knowledge and experience in making deals work and work for you.<br><br>  **“Ours is not a job, it’s a passion.”** "
 
 
 clients:
@@ -124,39 +124,31 @@ team:
     # text: "Lorem ipsum dolor sit amet consectetur."
     # subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
     section: team
-    contact: Call Us On 012 345 6789
+    # contact: 031 572 2042
+
     people:
-      - name: "Diana Peterson"
-        role: "Office Admin"
-        image: assets/img/team/500x500.jpg
+      - name: "Nola"
+        role: "Bond Consultant"
+        image: assets/img/team/nm.png
         social:
           - url: tel:123-456-7890
             icon: fas fa-phone
-          - url: mailto:admin@company.co.za?subject=Website Enquiry
+          - url: mailto:nola@homeloansandbonds.co.za?subject=Website Enquiry
             icon: fas fa-envelope
-          - url: https://facebook.com
+          - url: https://www.facebook.com/Homeloans-and-Mortgage-Bonds-107395807829809
             icon: fab fa-facebook-f
 
-      - name: "David Young"
-        role: "Owner and Consultant"
-        image: assets/img/team/gavin-young.jpg
+      - name: "Pieter"
+        role: "Owner"
+        image: assets/img/team/po.png
         social:
-          - url: tel:123-456-7890
+          - url: tel:0829579336
             icon: fas fa-phone
-          - url: mailto:admin@company.co.za?subject=Website Enquiry
+          - url: mailto:pieter@homeloansandbonds.co.za?subject=Website Enquiry
             icon: fas fa-envelope
-          - url: https://www.linkedin.com/in/eben-roux-854923135/
-            icon: fab fa-linkedin-in
-      - name: "Laura Parker"
-        role: "Bond Consultant"
-        image: assets/img/team/2.jpg
-        social:
-          - url: tel:123-456-7890
-            icon: fas fa-phone
-          - url: mailto:admin@company.co.za?subject=Website Enquiry
-            icon: fas fa-envelope
-          - url: https://www.linkedin.com/in/eben-roux-854923135/
-            icon: fab fa-linkedin-in
+          # - url: https://www.linkedin.com/in/eben-roux-854923135/
+          #   icon: fab fa-linkedin-in
+
 
 contact:
     title: "Contact Us"
@@ -164,18 +156,18 @@ contact:
     section: team
     
 footer:
-    legal: "Powered by the evo Group"
+    legal: "Website by Intellify"
     social:
-      - url: https://twitter.com
-        icon: "fab fa-twitter"  
-      - url: https://facebook.com
+      # - url: https://twitter.com
+      #   icon: "fab fa-twitter"  
+      - url: https://www.facebook.com/Homeloans-and-Mortgage-Bonds-107395807829809 target="_blank"
         icon: "fab fa-facebook-f"
-      - url: https://linkedin.com
-        icon: "fab fa-linkedin-in"
+      # - url: https://linkedin.com
+      #   icon: "fab fa-linkedin-in"
       # - url: https://github.com/raviriley/agency-jekyll-theme
       #   icon: "fab fa-github"
-      - url: https://instagram.com
-        icon: "fab fa-instagram"
+      # - url: https://instagram.com
+      #   icon: "fab fa-instagram"
 
 
 # {{ site.data.sitetext.ex.ex | markdownify | default: example }}

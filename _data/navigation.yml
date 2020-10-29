@@ -1,9 +1,9 @@
 nav:
+  - title: "Why Us?"
+    section: textblock
+    
   - title: "Services"
     section: services
-
-  - title: "Why evo Up!"
-    section: textblock
 
   - title: "Team"
     section: team

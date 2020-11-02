@@ -146,8 +146,8 @@ team:
             icon: fas fa-phone
           - url: mailto:pieter@homeloansandbonds.co.za?subject=Website Enquiry
             icon: fas fa-envelope
-          # - url: https://www.linkedin.com/in/eben-roux-854923135/
-          #   icon: fab fa-linkedin-in
+          - url: https://www.facebook.com/Homeloans-and-Mortgage-Bonds-107395807829809
+            icon: fab fa-linkedin-in
 
 
 contact:

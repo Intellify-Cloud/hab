@@ -131,7 +131,7 @@ team:
         role: "Bond Consultant"
         image: assets/img/team/nm.png
         social:
-          - url: tel:123-456-7890
+          - url: tel:082 877 0762
             icon: fas fa-phone
           - url: mailto:nola@homeloansandbonds.co.za?subject=Website Enquiry
             icon: fas fa-envelope

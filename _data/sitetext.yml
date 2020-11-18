@@ -1,6 +1,6 @@
 header:
-    title: Welcome Homeloans ans Bonds
-    text: Home loan experts.
+    title: Let us handle the stress of your homeloan application!
+    text: Welcome Homeloans ans Bonds
     branches:
       - name: Northern Suburbs (WC)
         link: "/boland-cape-winelands"
@@ -10,6 +10,24 @@ header:
         link: "/boland-cape-winelands"
       - name: Southern Suburbs & Atlantic Seaboard (WC)
         link: "/boland-cape-winelands"
+
+calculators:
+    title: "Bond and Home Loan Calculators"
+    text: "Use our Bond and Homeloan Calculators to work out the size of home loan you are likely to qualify for and what your bond repayments will be."
+    section: calculators
+    list:
+      - title: "Bond Calculator"
+        desc: "Calculate the home loan you qualify for."
+        icon: fas fa-calculator
+        link: 
+          url: /affordability-calculator
+          text: "Calculate"
+      - title: "Repayment Calculator"
+        desc: "Calculate your monthly repayment and how much you can expect to pay monthly on your bond repayments."
+        icon: fas fa-calculator   
+        link:
+          url: /bond-calculator
+          text: "Calculate"
 
 services:
     title: "Services We Offer"

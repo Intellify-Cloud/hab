@@ -1,0 +1,24 @@
+// Styling for the services section
+.calculators-heading {
+    margin: 15px 0;
+    text-transform: none;
+  }
+  
+  #calculators .card {
+    border: none;
+    background: #00acc8;
+  }
+  
+  #calculators .card-body {
+    border: none;
+    }
+
+  #calculators .card .card-footer {
+    border: none;
+    // background: none;
+  }
+    
+  #calculators .btn {
+    border-radius: 30px;
+    background: #fff;
+  }

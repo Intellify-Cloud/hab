@@ -12,7 +12,7 @@ nav:
     section: about
 
   - title: "Calculators"
-    url: /calculators
+    section: calculators
 
   - title: "Contact"
     url: /contact

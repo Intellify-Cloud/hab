@@ -45,7 +45,7 @@ services:
         icon: fas fa-tasks       
         link:
           url: tel:+27315722042
-          text: "Call Us"
+          text: "Phone Us"
       # - title: "I’m Still Looking for a Home"
       #   desc: "I’m searching property portals and visiting show houses"
       #   icon: fas fa-search

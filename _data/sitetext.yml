@@ -28,6 +28,12 @@ calculators:
         link:
           url: /bond-calculator
           text: "Calculate"
+      - title: "Costs Calculator"
+        desc: "Calculate your bond registration and property transfer costs."
+        icon: fas fa-calculator   
+        link:
+          url: /transfer-costs-calculator
+          text: "Calculate"
 
 services:
     title: "Services We Offer"

@@ -1,43 +1,174 @@
 // Styling for the footer
 .footer {
-  padding: 25px 0;
+  padding: 3rem 0 1.5rem;
   text-align: center;
-  span.copyright {
-    font-size: 90%;
-    line-height: 40px;
-    text-transform: none;
-    @include heading-font;
+  background-color: $white;
+  border-top: 1px solid $gray-200;
+  color: $gray-600;
+  @include heading-font;
+
+  .container {
+    max-width: 1140px;
   }
-  ul.quicklinks {
-    font-size: 90%;
-    line-height: 40px;
-    margin-bottom: 0;
-    text-transform: none;
-    @include heading-font;
+
+  // ----- Main area: brand + navigation -----
+  .footer-main {
+    display: grid;
+    gap: 2.5rem;
+    padding-bottom: 2rem;
+    text-align: left;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .footer-logo {
+    display: inline-block;
+    img {
+      max-height: 52px;
+      width: auto;
+    }
+  }
+
+  .footer-brand-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $gray-900;
+  }
+
+  .footer-description {
+    max-width: 38ch;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: $gray-600;
+  }
+
+  // ----- Navigation columns -----
+  .footer-navigation {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 2rem;
+  }
+
+  .footer-column-title {
+    margin: 0 0 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $gray-900;
+  }
+
+  .footer-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-column li {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-column a {
+    color: $gray-600;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    &:hover,
+    &:focus {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+
+  // ----- Bottom strip -----
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid $gray-200;
+    font-size: 0.85rem;
+  }
+
+  .footer-copyright {
+    color: $gray-600;
+  }
+
+  .footer-legal,
+  .footer-credits {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-legal a,
+  .footer-credits a {
+    color: $gray-600;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    &:hover,
+    &:focus {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+
+  .footer-credits {
+    color: $gray-500;
+    font-size: 0.8rem;
+  }
+
+  // ----- Social buttons (reuse existing circular style) -----
+  ul.footer-social,
+  ul.social-buttons {
+    margin: 0;
+    li {
+      a {
+        font-size: 18px;
+        line-height: 44px;
+        display: block;
+        width: 44px;
+        height: 44px;
+        transition: all 0.3s;
+        color: $white;
+        border-radius: 100%;
+        outline: none;
+        background-color: $gray-600;
+        &:active,
+        &:focus,
+        &:hover {
+          background-color: $primary;
+        }
+      }
+    }
   }
 }
 
-ul.social-buttons {
-  margin-bottom: 0;
-  li {
-    a {
-      font-size: 20px;
-      line-height: 50px;
-      display: block;
-      width: 50px;
-      height: 50px;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-      color: white;
-      border-radius: 100%;
-      outline: none;
-      background-color: #a711ce;
-      &:active,
-      &:focus,
-      &:hover {
-        background-color: $primary;
-      }
+@media (min-width: 768px) {
+  .footer {
+    .footer-navigation {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .footer-bottom {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    text-align: left;
+    .footer-main {
+      grid-template-columns: minmax(280px, 0.9fr) minmax(480px, 1.1fr);
+      align-items: start;
     }
   }
 }

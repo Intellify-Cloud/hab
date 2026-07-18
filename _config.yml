@@ -1,4 +1,4 @@
-url    : "https://www.homeloansandbonds.co.za"
+url    : "https://homeloansandbonds.co.za"
 baseurl: ""
 
 title      : Homeloans and Bonds
@@ -8,6 +8,19 @@ author     :
 
 analytics:
   google: G-9CQQ2N9SGF
+
+# Formspree form endpoint id (the part after https://formspree.io/f/).
+# REQUIRED for the contact form to deliver. The legacy email-based endpoint
+# (https://formspree.io/<email>) is deprecated and no longer works.
+formspree:
+  form_id: ""  # e.g. "xlekrzqd"
+
+# Third-party tracking. Set to false to disable until a cookie-consent banner is in place.
+facebook:
+  pixel_id: "1294367394294937"
+  page_id: "107395807829809"
+  app_id: "1678638095724206"
+  enabled: true
 
 collections:
   portfolio: 

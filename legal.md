@@ -9,25 +9,37 @@ background: grey
 
 This Privacy Policy describes how your personal information is collected, used, and shared when you visit {{ site.title }} (the “Site”).
 
-**PERSONAL INFORMATION WE COLLECT**
+ **PERSONAL INFORMATION WE COLLECT**
 
-{% if site.analytics.google %}
+ {% if site.analytics.google %}
 
-Automatically Collected (Google Analytics):
+ Automatically Collected (Google Analytics):
 
-When you visit the Site, we automatically receive information about your device from your browser, such as your IP address. As you browse the Site, we also collect information about how you interact with the Site. We refer to this automatically-collected information as “Device Information”.
+ When you visit the Site, we automatically receive information about your device from your browser, such as your IP address. As you browse the Site, we also collect information about how you interact with the Site. We refer to this automatically-collected information as “Device Information”.
 
-We collect Device Information using cookies. “Cookies” are data files that are placed on your device. For more information about cookies and how to disable them, visit http://www.allaboutcookies.org.
+ We collect Device Information using cookies. “Cookies” are data files that are placed on your device. For more information about cookies and how to disable them, visit http://www.allaboutcookies.org.
 
-We do this using Google Analytics: <https://www.google.com/intl/en/policies/privacy/>.
+ We do this using Google Analytics: <https://www.google.com/intl/en/policies/privacy/>.
 
-You can opt-out of Google Analytics here: <https://tools.google.com/dlpage/gaoptout>.
+ You can opt-out of Google Analytics here: <https://tools.google.com/dlpage/gaoptout>.
 
-{% else %}
+ {% endif %}
 
-We do not collect any data about you or use any cookies.
+ {% if site.facebook.enabled %}
 
-{% endif %}
+ Facebook Pixel and Customer Chat:
+
+ We also use the Facebook Pixel and Facebook Customer Chat plugin. These place cookies and similar technologies that allow Facebook to recognise your browser and may collect information about your device and how you interact with the Site, including pages viewed. This is used for analytics and to enable messaging via Facebook Messenger.
+
+ Facebook’s privacy policy is available here: <https://www.facebook.com/about/privacy>.
+
+ {% endif %}
+
+ {% unless site.analytics.google or site.facebook.enabled %}
+
+ We do not collect any data about you or use any cookies.
+
+ {% endunless %}
 
 **CHANGES**
 

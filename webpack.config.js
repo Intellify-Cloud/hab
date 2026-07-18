@@ -34,7 +34,22 @@ module.exports = {
                     'style-loader',
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'sass-loader'
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sassOptions: {
+                                quietDeps: true,
+                                silenceDeprecations: [
+                                    'legacy-js-api',
+                                    'import',
+                                    'global-builtin',
+                                    'color-functions',
+                                    'if-function',
+                                    'slash-div'
+                                ]
+                            }
+                        }
+                    }
                 ]
             },
             {

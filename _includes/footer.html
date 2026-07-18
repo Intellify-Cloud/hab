@@ -1,47 +1,74 @@
   <!-- Footer -->
-  <footer class="footer" id="footer" style="background-color:white;">
+  <footer class="footer" id="footer">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
-        </div>
-		<!-- Social Media -->
-        <div class="col-md-4">
-          <ul class="list-inline social-buttons">
-		  {% for link in site.data.sitetext.footer.social  %}
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="footer-logo" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+            {%- if site.logo -%}
+            <img src="{{ site.logo.path }}" alt="{{ site.title }} logo" />
+            {%- else -%}
+            <span class="footer-brand-name">{{ site.title }}</span>
+            {%- endif -%}
+          </a>
+          {%- if site.data.sitetext.footer.description -%}
+          <p class="footer-description">{{ site.data.sitetext.footer.description }}</p>
+          {%- endif -%}
+          {%- if site.data.sitetext.footer.social -%}
+          <ul class="footer-social list-inline social-buttons" aria-label="{{ site.data.sitetext.footer.social_label | default: 'Social links' }}">
+            {% for link in site.data.sitetext.footer.social %}
             <li class="list-inline-item">
-			  {% if link.url %}
-              <a href="{{ link.url }}">
-                {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
+              {%- if link.url -%}
+              <a href="{{ link.url }}" target="_blank" rel="noopener" aria-label="{{ link.title }}">
+                {%- if link.icon -%}<i class="{{ link.icon }}"></i>{%- endif -%}
               </a>
-			  {% endif %}
+              {%- endif -%}
             </li>
-			{% endfor %}
+            {% endfor %}
           </ul>
+          {%- endif -%}
         </div>
-		<!-- Legal -->
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="https://www.intellify.co.za" target="_blank">{{ site.data.sitetext.footer.legal | default: "" }}</a>
-            </li>
-          </ul>
-        </div>
+
+        {%- if site.data.sitetext.footer.sections -%}
+        <nav class="footer-navigation" aria-label="Footer navigation">
+          {% for section in site.data.sitetext.footer.sections %}
+          <div class="footer-column">
+            <h2 class="footer-column-title">{{ section.title }}</h2>
+            <ul>
+              {% for link in section.links %}
+              <li>
+                <a href="{% if link.external %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}"
+                  {%- if link.external %} target="_blank" rel="noopener"{% endif %}>{{ link.text }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endfor %}
+        </nav>
+        {%- endif -%}
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copyright">
+          {{ site.data.sitetext.footer.copyright_prefix | default: "Copyright" }} &copy; {{ site.title }} {{ 'now' | date: "%Y" }}
+        </span>
+        <ul class="footer-legal list-inline">
+          {%- assign privacy = site.data.sitetext.footer.privacy_label -%}
+          {%- if privacy -%}
+          <li class="list-inline-item">
+            <a href="{{ site.data.sitetext.footer.privacy_url | relative_url }}">{{ privacy }}</a>
+          </li>
+          {%- endif -%}
+        </ul>
+        {%- if site.data.sitetext.footer.credits -%}
+        <ul class="footer-credits list-inline">
+          {% for credit in site.data.sitetext.footer.credits %}
+          <li class="list-inline-item">
+            <a href="{{ credit.url }}" target="_blank" rel="noopener">{{ credit.text }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {%- endif -%}
       </div>
     </div>
   </footer>
-{% if page.layout == "page" %}
-<script>
-fixPageShort();
-function fixPageShort() {
-  if(window.innerHeight > document.body.offsetHeight) {
-    document.getElementById("footer").style.position="fixed";
-    document.getElementById("footer").style.bottom=0;
-    document.getElementById("footer").style.right=0;
-    document.getElementById("footer").style.left=0;
-    document.getElementById("footer").style.width="100%";
-  }
-}
-</script>
-{% endif %}
   <!-- End Footer -->

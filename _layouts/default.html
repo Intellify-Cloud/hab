@@ -7,16 +7,17 @@
 
       {{ content }}
 
+      {% if site.facebook.enabled %}
       <script>
         var div = document.createElement('div');
         div.className = 'fb-customerchat';
-        div.setAttribute('page_id', '107395807829809');
+        div.setAttribute('page_id', '{{ site.facebook.page_id }}');
         div.setAttribute('ref', '');
         document.body.appendChild(div);
         window.fbMessengerPlugins = window.fbMessengerPlugins || {
           init: function () {
             FB.init({
-              appId            : '1678638095724206',
+              appId            : '{{ site.facebook.app_id }}',
               autoLogAppEvents : true,
               xfbml            : true,
               version          : 'v8.0'
@@ -38,6 +39,7 @@
           }(document, 'script', 'facebook-jssdk'));
         }, 0);
       </script>
+      {% endif %}
       
 	  {% include footer.html %}
 

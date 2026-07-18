@@ -17,7 +17,7 @@
 		<ul class="list-inline social-buttons">
 		{% for network in person.social %}
 		  <li class="list-inline-item">
-			<a href="{{ network.url }}" target="_blank" rel="noopener noreferrer">
+			<a href="{{ network.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ network.title | default: network.icon }}" title="{{ network.title | default: network.icon }}">
 			  <i class="{{ network.icon }}"></i>
 			</a>
 		  </li>

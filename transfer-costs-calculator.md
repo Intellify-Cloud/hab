@@ -5,7 +5,7 @@ background: white
 ---
 
 <div>
-    <iframe class="fees-calc" frameborder="0"
+    <iframe class="fees-calc" frameborder="0" width="100%" height="1560"
         src="https://www.ooba.co.za/calculators/bond-and-transfer-costs-calculator/?iframe=true&iftype=nobrand"
         title="Calculate the Costs Regarding the Bond Registration and Property Transfer."></iframe>
 </div>

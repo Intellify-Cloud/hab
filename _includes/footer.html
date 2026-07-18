@@ -13,12 +13,12 @@
           {%- if site.data.sitetext.footer.description -%}
           <p class="footer-description">{{ site.data.sitetext.footer.description }}</p>
           {%- endif -%}
-          {%- if site.data.sitetext.footer.social -%}
+          {%- if site.data.social.social -%}
           <ul class="footer-social list-inline social-buttons" aria-label="{{ site.data.sitetext.footer.social_label | default: 'Social links' }}">
-            {% for link in site.data.sitetext.footer.social %}
+            {% for link in site.data.social.social %}
             <li class="list-inline-item">
               {%- if link.url -%}
-              <a href="{{ link.url }}" target="_blank" rel="noopener" aria-label="{{ link.title }}">
+              <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ link.title }}">
                 {%- if link.icon -%}<i class="{{ link.icon }}"></i>{%- endif -%}
               </a>
               {%- endif -%}
@@ -36,8 +36,9 @@
             <ul>
               {% for link in section.links %}
               <li>
+                {%- assign external_link = link.external and link.url contains '://' -%}
                 <a href="{% if link.external %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}"
-                  {%- if link.external %} target="_blank" rel="noopener"{% endif %}>{{ link.text }}</a>
+                  {%- if external_link %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.text }}</a>
               </li>
               {% endfor %}
             </ul>

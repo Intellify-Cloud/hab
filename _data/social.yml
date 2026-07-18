@@ -1,0 +1,9 @@
+# Brand-level social channels — single source of truth, shared across the site
+# (footer + any future surfaces). Add a channel once here.
+social:
+  - title: "Facebook"
+    url: "https://www.facebook.com/Homeloans-and-Mortgage-Bonds-107395807829809"
+    icon: "fab fa-facebook-f"
+  # - title: "LinkedIn"
+  #   url: "https://www.linkedin.com"
+  #   icon: "fab fa-linkedin-in"

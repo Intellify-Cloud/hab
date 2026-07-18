@@ -147,10 +147,13 @@ team:
         image: assets/img/team/nm.png
         social:
           - url: tel:082 877 0762
+            title: "Call Nola"
             icon: fas fa-phone
           - url: mailto:nola@homeloansandbonds.co.za?subject=Website Enquiry
+            title: "Email Nola"
             icon: fas fa-envelope
           - url: https://www.facebook.com/Homeloans-and-Mortgage-Bonds-107395807829809
+            title: "Nola on Facebook"
             icon: fab fa-facebook-f
 
       - name: "Pieter"
@@ -158,11 +161,14 @@ team:
         image: assets/img/team/po.png
         social:
           - url: tel:0829579336
+            title: "Call Pieter"
             icon: fas fa-phone
           - url: mailto:pieter@homeloansandbonds.co.za?subject=Website Enquiry
+            title: "Email Pieter"
             icon: fas fa-envelope
           - url: https://www.facebook.com/Homeloans-and-Mortgage-Bonds-107395807829809
-            icon: fab fa-linkedin-in
+            title: "Pieter on Facebook"
+            icon: fab fa-facebook-f
 
 
 contact:
@@ -203,13 +209,7 @@ footer:
             url: "mailto:nola@homeloansandbonds.co.za"
             external: true
 
-    social:
-      - title: "Facebook"
-        url: https://www.facebook.com/Homeloans-and-Mortgage-Bonds-107395807829809
-        icon: "fab fa-facebook-f"
-      # - title: "LinkedIn"
-      #   url: https://www.linkedin.com
-      #   icon: "fab fa-linkedin-in"
+    social_label: "Follow us"
 
     credits:
       - text: "Website by Intellify"

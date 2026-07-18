@@ -1,0 +1,24 @@
+{%- if site.facebook.pixel_id -%}
+<div class="consent-banner d-none" id="facebook-consent-banner" role="dialog" aria-labelledby="facebook-consent-title" aria-describedby="facebook-consent-copy" aria-live="polite">
+  <div class="container">
+    <div class="consent-banner__inner">
+      <div class="consent-banner__copy">
+        <p class="consent-banner__eyebrow">Privacy choice</p>
+        <h2 class="consent-banner__title" id="facebook-consent-title">Help us show Messenger chat</h2>
+        <p class="consent-banner__text" id="facebook-consent-copy">
+          We only load Facebook Pixel and the Messenger chat widget after you accept.
+          Decline to keep those tools switched off.
+        </p>
+      </div>
+      <div class="consent-banner__actions">
+        <button type="button" class="btn btn-primary consent-banner__button" data-facebook-consent="accept">
+          Accept
+        </button>
+        <button type="button" class="btn btn-outline-light consent-banner__button" data-facebook-consent="decline">
+          Decline
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{%- endif -%}

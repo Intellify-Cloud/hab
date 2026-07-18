@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-<!-- {% if site.analytics.google %} -->
+  {% if site.analytics.google %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}"></script>
@@ -12,13 +12,13 @@
   gtag('config', '{{ site.analytics.google }}');
 </script>
   
-<!-- {% endif %} -->
+  {% endif %}
 
-<!-- {% if site.facebook.enabled %} -->
+  {% if site.facebook.enabled %}
 <!-- Facebook Pixel Code -->
 <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '{{ site.facebook.pixel_id }}'); fbq('track', 'PageView');</script><noscript> <img height="1" width="1" src="https://www.facebook.com/tr?id={{ site.facebook.pixel_id }}&ev=PageView&noscript=1"/></noscript>
 <!-- End Facebook Pixel Code -->
-<!-- {% endif %} -->
+  {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="title" content="{{ site.title }}">
   <meta name="description" content="{{ site.description }}">
@@ -43,6 +43,35 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   <title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <script>
+    window.habFacebookConfig = {
+      enabled: {{ site.facebook.enabled | default: false | jsonify }},
+      pixelId: {{ site.facebook.pixel_id | default: "" | jsonify }},
+      pageId: {{ site.facebook.page_id | default: "" | jsonify }},
+      appId: {{ site.facebook.app_id | default: "" | jsonify }}
+    };
+  </script>
+
+   {%- assign footer_social = site.data.social.social | default: empty -%}
+  {%- assign same_as = footer_social | map: 'url' -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "logo": {{ site.logo.path | prepend: site.url | jsonify }},
+    "email": {{ site.email | jsonify }},
+    "telephone": "+27 31 572 2042",
+    "areaServed": [
+      "Durban",
+      "KwaZulu-Natal",
+      "South Africa"
+    ],
+    "sameAs": {{ same_as | jsonify }}
+  }
+  </script>
 
   <link rel="icon" href="{{ site.url }}/favicon.png" type="image/png">
   <link rel="stylesheet" href="{{ site.url | append: "/assets/bundle.css" | relative_url }}">

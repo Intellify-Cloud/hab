@@ -1,0 +1,39 @@
+<!-- Card grid (shared by services & calculators) -->
+  {% assign grid = include.source %}
+  <section class="page-section" id="{{ grid.section | default: "services" }}">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ grid.title | default: "Services We Offer" }}</h2>
+          {% if grid.text %}
+          <h3 class="section-subheading text-muted">{{ grid.text }}</h3>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="card-deck {{ include.deck_class }}">
+        {% for item in grid.list %}
+        <div class="card">
+          <div class="card-body text-center">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="{{ item.icon | default: "fas fa-shopping-cart" }} fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="card-title service-heading">{{ item.title | markdownify }}</h4>
+            {% if item.desc %}
+            <div class="text-muted">{{ item.desc | markdownify }}</div>
+            {% endif %}
+          </div>
+          {% if item.link %}
+          <div class="card-footer text-center">
+            <a href="{{ item.link.url }}" class="btn btn-primary" role="button">{{ item.link.text }}</a>
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </section>
+  <!-- End card grid -->
